@@ -14,7 +14,7 @@ layout: default
       <div class="blog-post">
 			  {% if post.image == '' or post.image == nil %}
 			  {% else %}
-			  <img src="{{ site.url }}{{ post.image }}" alt="{{ post.title }}">
+			  <center><img src="{{ site.url }}{{ post.image }}" alt="{{ post.title }}" width="50%" ></center>
 			  {% endif %}
 			<h3><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
 			  {{ post.content | strip_html | truncatewords: 50 }}

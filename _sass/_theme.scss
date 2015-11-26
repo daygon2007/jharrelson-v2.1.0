@@ -110,6 +110,7 @@ p, ul, li, a{
 }
 #breadcrumbs{
 	background-color:$teal;
+	text-transform: capitalize;
 		.container{
 			margin:0 auto;
 		}
