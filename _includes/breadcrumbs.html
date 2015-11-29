@@ -2,7 +2,7 @@
 	<div class="container">
 
 <a href="{{ site.baseurl }}">Home</a> <i class="fa fa-angle-double-right"></i>
-		{% if page.categories %}<a href="{{ site.url }}/{{ page.categories }}">{{ page.categories }}</a> <i class="fa fa-angle-double-right"></i>{% endif %} {{ page.title }}
+		{% if page.categories %}<a href="{{ site.url }}/{{ page.categories }}">{{ page.categories | first }}</a> <i class="fa fa-angle-double-right"></i>{% endif %} {{ page.title }}
 	</div>
 </div>
 
