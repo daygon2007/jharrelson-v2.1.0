@@ -1,23 +1,25 @@
 ---
 layout: default
 ---
-<div class="container">
-  <h2><strong>My Past Work</strong></h2>
-  <div id="blog-breadcrumbs">
-  </div>
-  <!-- End Blog Bread Crumbs -->
-  <div class="containter" id="portfolio-grid">
-	  {% for post in site.categories.[page.category] %}
-       	<div class="portfolio-item">
-        	
-	<div class="portfolio-img"><img src="{{ site.url }}{{ post.image }}" alt="{{ post.title }}" ></div>
-    
-    <div class="portfolio-content">
-    	<h3>{{ post.title }}</h3>
-        <p>{{ post.content }}</p>
-    </div>
-        </div>
-	  {% endfor %}
-  </div>
-  
+<div id="page-title">
+  <h2 class="container">
+	  {{ page.title }}
+  </h2>
 </div>
+  {% include breadcrumbs.html %}
+  <!-- End Blog Bread Crumbs -->
+    <div id="content-main">
+      <div class="container" id="portfolio-grid">
+          {% for post in site.categories.[page.category] %}
+            <div class="portfolio-item">
+
+        <div class="portfolio-img"><img src="{{ site.url }}{{ post.image }}" alt="{{ post.title }}" ></div>
+
+        <div class="portfolio-content">
+            <h3>{{ post.title }}</h3>
+            <p>{{ post.content }}</p>
+        </div>
+            </div>
+          {% endfor %}
+      </div>
+    </div>

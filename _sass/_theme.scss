@@ -330,6 +330,16 @@ footer{
 	font-size:4em;
 	margin: 0 20px 0 0;
 }
+.blog-post-page{
+    h3, h4{
+        color: $teal;
+        text-decoration: underline;
+        padding: 15px 0 10px 0;
+    }
+    img{
+        margin: 25px 0;
+    }
+}
 /* Portfolio Main Page */
 #portfolio-grid{
 	display: flex;
@@ -341,6 +351,7 @@ footer{
 	flex-wrap:wrap;
 	-webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
+    margin-top:25px;
 	
 		.row{
 			overflow:hidden;	

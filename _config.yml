@@ -6,6 +6,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.jonathon-harrelson.com" # the base hostname & protocol for your site
 twitter_username: MrJHarrelson
 github_username:  Daygon2007
+exclude: [gulpfile.js, node_modules, package.json, README.md]
 
 # Build settings
 markdown: kramdown
@@ -38,3 +39,12 @@ navigation:
   
 # Excerpts
 excerpt_separator: <a href="{ site.url }{ post.url }">Read More @rarr;</a>
+
+# Defaults
+defaults:
+   -
+     scope:
+       path: ""
+       type: "posts"
+     values:
+       share: facebook linkedin twitter

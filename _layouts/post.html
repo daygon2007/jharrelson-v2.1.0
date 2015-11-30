@@ -8,10 +8,11 @@ layout: default
   </h2>
 </div>
 {% include breadcrumbs.html %}
-<div id="content-main">
+<div id="content-main" class="blog-post-page">
   <div class="container">
     <div class="col-md-8">
-		{{ content }}
+        <center><img src="{{ site.url}}{{ page.image }}" alt="{{ page.title }}"></center>
+		<article>{{ content }}</article>
     </div>
     <div class="col-md-4">
 		<h3>Share This Content</h3>

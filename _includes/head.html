@@ -15,12 +15,13 @@
 <meta property="og:type"               content="article" />
 <meta property="og:title"              content="{{ page.title }}" />
 <meta property="og:description"        content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
-<meta property="og:image"              content="https://pbs.twimg.com/profile_banners/20878005/1427313549/1500x500" />
-	
+<meta property="og:image"              content="{% if page.image == '' or page.image == nil %}
+				https://pbs.twimg.com/profile_banners/20878005/1427313549/1500x500{% else %}{{ site.url }}{{ page.image }}{% endif %}" />
 <!-- Twitter -->
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@MrJHarrelson" />
 <meta name="twitter:title" content="{{ page.title }}" />
 <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 120 }}{% else %}{{ site.description }}{% endif %}" />
-<meta name="twitter:image" content="https://pbs.twimg.com/profile_banners/20878005/1427313549/1500x500" />
+<meta name="twitter:image" content="{% if page.image == '' or page.image == nil %}
+				https://pbs.twimg.com/profile_banners/20878005/1427313549/1500x500{% else %}{{ site.url }}{{ page.image }}{% endif %}" />
 </head>
