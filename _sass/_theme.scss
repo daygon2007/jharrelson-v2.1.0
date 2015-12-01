@@ -115,6 +115,39 @@ p, ul, li, a{
 			margin:0 auto;
 		}
 }
+#subs-popup, .popup{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	border-radius: 10px;
+	background: $white;
+	border: thin solid $black;
+	padding:15px;
+	display: none;
+		h2{
+			font-size:3em;
+			text-align: center;
+		}
+	div{
+		position: relative;
+			#close{
+				content:'';
+				color:$white;
+				background: $black;
+				position: absolute;
+				top:-45px;
+				right:-30px;
+				padding: 5px 10px;
+				border-radius: 100%;
+				cursor: pointer;
+				display:block;
+					&:hover{
+						background: $lblue;
+					}
+			}
+	}
+}
 
 /* Navigation */
 .navbar{
