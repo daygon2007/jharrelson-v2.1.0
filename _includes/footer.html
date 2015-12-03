@@ -2,11 +2,7 @@
     	<div class="container">
         <div class="col-md-4">
             	<h4>Random Fact About Me</h4>
-                {% for post in site.categories.facts limit:1 %}
-     
-        <blockquote id="fact">{{ post.content }}</blockquote>
-      
-			{% endfor %}
+                <div id="random_posts"></div>
             </div>
         	<div class="col-md-4">
             	<h4>Latest Tweets</h4>
@@ -46,3 +42,4 @@
 </div>
 
 <script src="{{ site.url}}/js/main.js" type="text/javascript"></script>
+
