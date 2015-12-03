@@ -1,6 +1,6 @@
 ---
 ---
-"facts":[
+[
     {% for post in site.categories.facts %}
     {
 	"title"    : "{{ post.title }}",

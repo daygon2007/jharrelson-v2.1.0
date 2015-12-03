@@ -1,34 +1,44 @@
-
+function generateRandomPosts()
+    {
         $.getJSON("http://jonathon-harrelson.com/search.json", function(data) {
-            console.log(data);
-			
-			var dataArray = $.map(data, function(value) { return value;});
-			
-			function shuffle(array) {
-  				var currentIndex = array.length, temporaryValue, randomIndex ;
+            console.log("[search.json loaded for random posts]");
 
-  				// While there remain elements to shuffle...
-				while (0 !== currentIndex) {
+            var postsCount = data.length;
+            var posts = data;
 
-    			// Pick a remaining element...
-    			randomIndex = Math.floor(Math.random() * currentIndex);
-    			currentIndex -= 1;
+            var randomIndexUsed = [];
+            var counter = 0;
+            var numberOfPosts = 1;
 
-    			// And swap it with the current element.
-				temporaryValue = array[currentIndex];
-    			array[currentIndex] = array[randomIndex];
-    			array[randomIndex] = temporaryValue;
-  				}
+            var divRandomPosts = $("#random_posts");
 
-  				return array;
-			}
-			
-			shuffle(dataArray);
-			
-			for(var i = 0; i < dataArray.length; i++){
-				var current = data[dataArray[i]];
-				$("#random_posts").append("<blockquote>" + current + "</blockquote>");
-			}
+            while (counter < numberOfPosts)
+            {
+                var randomIndex = Math.floor(Math.random() * postsCount);
 
-            console.log(current);
+                if (randomIndexUsed.indexOf(randomIndex) == "-1")
+                {
+                    var postHREF = posts[randomIndex].href;
+                    var postTitle = posts[randomIndex].title;
+					var postContent = posts[randomIndex].content;
+
+                    if (counter == (numberOfPosts - 1))
+                    {
+                        divRandomPosts.append('<blockquote>' + postContent + '</blockquote>');
+                    }
+                    else
+                    {
+                        divRandomPosts.append('<blockquote>' + postContent + '</blockquote>');
+                    }
+
+                    randomIndexUsed.push(randomIndex);
+
+                    counter++;
+                }
+            }
         });
+    }
+
+    $(document).ready(function() {
+        generateRandomPosts();
+    });
