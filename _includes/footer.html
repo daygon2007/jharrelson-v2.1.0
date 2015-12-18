@@ -13,7 +13,7 @@
             	<h4>Useful Links</h4>
                 <ul>
                 	<li><a href="http://www.moz.com" title="Moz" target="_blank">Moz</a> - My SEO Source</li>
-                    <li><a href="http:www.w3schools.com" target="_blank">w3schools</a> - A great source to learn programming</li>
+                    <li><a href="http://www.w3schools.com" target="_blank">w3schools</a> - A great source to learn programming</li>
                     <li><a href="http://www.codepen.io" target="_blank">CodePen</a> - A great source for inspiration</li>
                 </ul>
             </div>
@@ -24,10 +24,10 @@
         	Site Designed, Built, and Maintained By Jonathon Harrelson. | <a href="{{ site.url }}/sitemap">Site Map</a>  | <a href="{{ site.url }}/credits">Credits</a>
         </div>
 	</footer><!-- #colophon -->
-</div><!-- #page -->
+<!-- Subscription Popup -->
 <div id="subs-popup" class="col-md-5 popup">
 	<div>
-		<div id="close"><i class="fa fa-times"></i></div>
+		<div class="close-popup" id="subscribe"><i class="fa fa-times"></i></div>
 		<h2 class="handwriting">Subscribe to My Monthly Newsletter</h2>
 		<p>I send out SEO Tips and Web Development trends as well as other useful marketing information. My promise to you is I will never spam you or send you emails saying buy this and buy that.</p>
 		<div id="RWhZZ09nPT0="></div>
@@ -40,6 +40,26 @@
                                                 
 	</div>
 </div>
-
+{% if page.url == "/webinars/wordpress-to-jekyll-webinar/" %}
+{% else %}
+<!-- Webinar Popup -->
+<div id="webinar-popup" class="col-md-5 popup">
+	<div>
+		<div class="close-popup" id="webinar"><i class="fa fa-times"></i></div>
+		<h2>Sign Up for my FREE Webinar</h2>
+		<h4><u>December 30, 2015 9:00am CST</u></h4>
+	<p>In this webinar I will be going over the how's and the why's of moving from WordPress to Jekyll. I will be showing you from start to finish how to completely migrate your entire site, posts, pages and comments quickly and efficiently.</p>
+	
+	<div id="RWEveTF3PT0="></div>
+<script type="text/javascript">
+    document.write(unescape("%3Cscript src='" + document.location.protocol + "//app.leadsius.com/bundles/leadsiusplatform/leadsius/New-Form-Builder/public/lswf.js?v=20151208' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+    formu6255 = new Ls_Form('RWEveTF3PT0=',document.location.protocol+'//app.leadsius.com','RTFRRCtBPT0=');
+</script>
+                                                
+	</div>
+</div>
+{% endif %}
 <script src="{{ site.url}}/js/main.js" type="text/javascript"></script>
 

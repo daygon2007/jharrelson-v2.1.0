@@ -24,6 +24,9 @@ navigation:
   
 - root: Portfolio
   url: /portfolio/
+
+- root: Webinars
+  url: /webinars/
   
 - root: My Story
   url: /my-story/
@@ -48,3 +51,10 @@ defaults:
        type: "posts"
      values:
        share: facebook linkedin twitter
+
+# Other Settings
+#gems:
+#  - octopress-minify-html
+
+# Minify HTML
+env: production

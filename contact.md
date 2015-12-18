@@ -1,8 +1,9 @@
 ---
 layout: page
-title: Contact Me
+title: Contact Me About Front-End Development or SEO
 permalink: /contact/
 breadcrumb: Contact
+description: I'm always available via email if you have questions about fron-end development and SEO. I enjoy helping others any way I can so fill out the form and I'll get back to you.
 ---
 
 <div id="page-title">

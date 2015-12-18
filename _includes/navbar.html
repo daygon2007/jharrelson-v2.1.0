@@ -12,13 +12,13 @@
       <!-- Begin Social Nav -->
     <div class="social-nav">
     	<ul>
-        	<li class="col-xs-1"><a href="https://www.facebook.com/jonathon.harrelson" target="_blank" title="My Facebook Page"><i class="fa fa-facebook"></i></a></li>
-            <li class="col-xs-1"><a href="http://www.twitter.com/MrJHarrelson" target="_blank" title="My Twitter Feed"><i class="fa fa-twitter"></i></a></li>
-            <li class="col-xs-1"><a href="https://plus.google.com/+JonathonHarrelson" target="_blank" title="My Google Plus Page"><i class="fa fa-google-plus"></i></a></li>
-            <li class="col-xs-1"><a href="https://www.linkedin.com/in/jonathonharrelson" target="_blank" title="My LinkedIn Profile"><i class="fa fa-linkedin"></i></a></li>
-            <li class="col-xs-1"><a href="https://instagram.com/daygon2007/" target="_blank" title="My Instagram Pictures"><i class="fa fa-instagram"></i></a></li>
-            <li class="col-xs-1"><a href="http://codepen.io/jharrelson/" target="_blank" title="My Playground"><i class="fa fa-codepen"></i></a></li>
-            <li class="col-xs-1"><a href="https://github.com/daygon2007" target="_blank" title="My Repository"><i class="fa fa-github"></i></a></li>
+        	<li class="col-xs-1"><a href="https://www.facebook.com/jonathon.harrelson" target="_blank" title="My Facebook Page" onclick="ga('send', 'event', 'Social Nav - {{ page.title }}', 'Click', 'Facebook');"><i class="fa fa-facebook"></i></a></li>
+            <li class="col-xs-1"><a href="http://www.twitter.com/MrJHarrelson" target="_blank" title="My Twitter Feed" onclick="ga('send', 'event', 'Social Nav - {{ page.title }}', 'Click', 'Twitter');"><i class="fa fa-twitter"></i></a></li>
+            <li class="col-xs-1"><a href="https://plus.google.com/+JonathonHarrelson" target="_blank" title="My Google Plus Page" onclick="ga('send', 'event', 'Social Nav - {{ page.title }}', 'Click', 'Google+');"><i class="fa fa-google-plus"></i></a></li>
+            <li class="col-xs-1"><a href="https://www.linkedin.com/in/jonathonharrelson" target="_blank" title="My LinkedIn Profile" onclick="ga('send', 'event', 'Social Nav - {{ page.title }}', 'Click', 'LinkedIn');"><i class="fa fa-linkedin"></i></a></li>
+            <li class="col-xs-1"><a href="https://instagram.com/daygon2007/" target="_blank" title="My Instagram Pictures" onclick="ga('send', 'event', 'Social Nav - {{ page.title }}', 'Click', 'Instagram');"><i class="fa fa-instagram"></i></a></li>
+            <li class="col-xs-1"><a href="http://codepen.io/jharrelson/" target="_blank" title="My Playground" onclick="ga('send', 'event', 'Social Nav - {{ page.title }}', 'Click', 'CodePen');"><i class="fa fa-codepen"></i></a></li>
+            <li class="col-xs-1"><a href="https://github.com/daygon2007" target="_blank" title="My Repository" onclick="ga('send', 'event', 'Social Nav - {{ page.title }}', 'Click', 'GitHub');"><i class="fa fa-github"></i></a></li>
         </ul>
     </div>
       <!-- End Social Nav -->
@@ -28,7 +28,7 @@
             {% for link in site.navigation %}
                 {% assign url = page.url|remove:'index.html' %}
             <li>
-                 <a href="{{site.url}}{{link.url}}"  class="{{link.icon}}">{{link.root}}</a>
+                 <a href="{{site.url}}{{link.url}}"  class="{{link.icon}}" onclick="ga('send', 'event', 'Navigation - {{ page.title }}', 'Click', '{{ link.root }}');">{{link.root}}</a>
             </li>
             {% endfor %}
           </ul>

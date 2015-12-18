@@ -9,6 +9,7 @@ categories:
 - Blog
 tags: []
 image: /images/blog/blog-wp-jekyll.jpg
+description: At the end of 2015 I decided migrate my site from WordPress to Jekyll. In this article I discuss why and how I made the move.
 ---
 
 <p>Lately I've been in the mood to explore different things and try different ways of building web sites. I'm always looking at how I can improve user experience and increase page speed loading time. I've also wanted to move away from traditional CMS platforms for a while now also. So I did some research and found <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> and is primarily used by the good people at GitHub.</p>

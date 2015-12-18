@@ -10,3 +10,13 @@ document.write(unescape("%3Cscript async src='" + lsBaseURL + "tracker.js?_k=4cd
 
   ga('create', 'UA-60811148-1', 'auto');
   ga('send', 'pageview');
+
+// Disqus
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//jonathonharrelson.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();

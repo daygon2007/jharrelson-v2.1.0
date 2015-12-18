@@ -131,7 +131,7 @@ p, ul, li, a{
 		}
 	div{
 		position: relative;
-			#close{
+			.close-popup{
 				content:'';
 				color:$white;
 				background: $black;
@@ -365,10 +365,16 @@ footer{
 }
 .blog-post-page{
     h3, h4{
-        color: $teal;
+        color: $white;
+		font-weight: bold;
         text-decoration: underline;
         padding: 15px 0 10px 0;
     }
+	a{
+		padding:0;
+		margin:0;
+		color: $teal;
+	}
     img{
         margin: 25px 0;
     }
@@ -432,6 +438,13 @@ footer{
 	color:$white;
 	padding:15px 0;
 }
+/* Credits */
+.credit, .row{
+	margin:15px 0;
+		.credit-img img{
+			max-width:235px;
+		}
+}
 
 /* Media Queries */
 @media only screen and (max-width : 768px) {
@@ -444,5 +457,14 @@ footer{
 	}
 	.container-fluid{
 		padding:0;	
+	}
+}
+/* Forms */
+.help-block{
+	color:$white;
+}
+.ls-button{
+	span{
+		color:$white;
 	}
 }

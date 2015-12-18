@@ -1,9 +1,11 @@
 ---
 layout: default
+title: Front-End Web Developer & SEO Specialist
+description: I am a front-end web developer with extesive experience with WordPress and Jekyll. I also am well versed with search engine optimization. Contact me for more info.
 ---
 
 <div id="home-sub-head" data-type="background" data-speed="3">
-<video id="videobcg" preload="auto" autoplay loop muted volume="0">
+<video id="videobcg" preload="auto" autoplay loop muted>
      <source src="{{ site.url }}/images/home-bg-vid.mp4" type="video/mp4">
           Sorry, your browser does not support HTML5 video.
 </video>
@@ -24,43 +26,43 @@ layout: default
         <ul>
         <!-- Begin For Statement for Blog -->
 			{% for post in site.categories.blog limit:5 %}
-       <li><a href="{{ site.url}}{{ post.url }}">{{ post.title }}</a></li>
+       <li><a href="{{ site.url}}{{ post.url }}" onclick="ga('send', 'event', 'Blog - Home Page', 'Click', '{{ post.title }}');">{{ post.title }}</a></li>
 			{% endfor %}
        <!-- End for Statement -->
        </ul>
-		<a href="#">View All <i class="fa fa-arrow-circle-right"></i></a>
+		<a href="{{ site.url}}/blog" onclick="ga('send', 'event', 'Blog - Home Page', 'Click', 'Blog View All Link');">View All <i class="fa fa-arrow-circle-right"></i></a>
     </section>
       <section class="col-md-3" id="personal-projects">
         <h4>Latest Personal Projects</h4>
         <ul>
          <!-- Begin For Stement for Personal Portfolio -->
 			{% for post in site.categories.personal limit:5 %}
-          <li><a href="{{ site.url}}{{ post.url }}">{{ post.title }}</a></li>
+          <li><a href="{{ site.url}}{{ post.url }}" onclick="ga('send', 'event', 'Personal Porfolio - Home Page', 'Click', '{{ post.title }}');">{{ post.title }}</a></li>
 			{% endfor %}
             <!-- End For Statement -->
         </ul>
-        <a href="#">View All <i class="fa fa-arrow-circle-right"></i></a> </section>
+        <a href="{{ site.url}}/portfolio" onclick="ga('send', 'event', 'Personal Porfolio - Home Page', 'Click', 'Personal Portfolio View All Link');">View All <i class="fa fa-arrow-circle-right"></i></a> </section>
       <section class="col-md-3" id="professional-projects">
         <h4>Latest Professional Projects</h4>
         <ul>
           <!-- Begin For Statement Professional Portfolio -->
 			{% for post in site.categories.professional limit:5 %}
-          <li><a href="{{ site.url}}{{ post.url }}">{{ post.title }}</a></li>
+          <li><a href="{{ site.url}}{{ post.url }}" onclick="ga('send', 'event', 'Professional Porfolio - Home Page', 'Click', '{{ post.title }}');">{{ post.title }}</a></li>
 			{% endfor %}
             <!-- End For Statement -->
         </ul>
-        <a href="#">View All <i class="fa fa-arrow-circle-right"></i></a> </section>
+        <a href="{{ site.url}}/portfolio" onclick="ga('send', 'event', 'Professional Porfolio - Home Page', 'Click', 'Professional Portfolio Link');">View All <i class="fa fa-arrow-circle-right"></i></a> </section>
       <section class="col-md-3" id="resume">
         <h4>Download My Resume</h4>
-        <p><i class="fa fa-file-pdf-o"></i> Resume in PDF Fromat</p>
-        <p><i class="fa fa-file-word-o"></i> Resume in Secure Word Format</p>
-        <p><i class="fa fa-linkedin"></i> LinkedIn Resume</p>
+        <p><a href="{{ site.url}}/Jonathon-Resume.docx" target="_blank" onclick="ga('send', 'event', 'Resume - Home Page', 'Click', 'Word Version of Resume');"><i class="fa fa-file-pdf-o"></i> Resume in PDF Fromat</a></p>
+          <p><a href="{{ site.url}}/Jonathon-Resume.pdf" target="_blank" onclick="ga('send', 'event', 'Resume - Home Page', 'Click', 'PDF Version of Resume');"><i class="fa fa-file-word-o"></i> Resume in Secure Word Format</a></p>
+        <!--<p><i class="fa fa-linkedin"></i> LinkedIn Resume</p>-->
       </section>
     </div>
   </div>
 </div>
 <!-- End Home Blocks -->
-<div id="about-me" data-type="background" data-speed="4">
+<div id="about-me" data-type="background" data-speed="1">
   <div class="row">
     <div class="container">
       <div class="col-md-6 overlay">

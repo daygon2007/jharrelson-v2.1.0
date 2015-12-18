@@ -125,6 +125,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "font-awesome.scss";
 
 /*--------------------------------------------------------------
+# FancyBox
+--------------------------------------------------------------*/
+@import "_jquery.fancybox.scss";
+
+/*--------------------------------------------------------------
 # Theme
 --------------------------------------------------------------*/
 @import "_theme.scss";

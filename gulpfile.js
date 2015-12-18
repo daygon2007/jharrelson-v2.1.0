@@ -42,7 +42,7 @@ gulp.task('img', function(){
     gulp.src('images/**/*.{png,jpg,gif}')
         .pipe(plumber(plumberErrorHandler))
         .pipe(imagemin({
-            optimizationLevel: 10,
+            optimizationLevel: 1,
             progressive: true
             }))
         .pipe(gulp.dest('_site/img'))
