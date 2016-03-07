@@ -2,17 +2,19 @@
 layout: default
 ---
 
-<div id="page-title">
-  <h2 class="container">
+<div id="page-title" itemscope itemtype="http://schema.org/Blog">
+  <h2 class="container" itemprop="headline">
 	  {{ page.title }}
   </h2>
+	
 </div>
 {% include breadcrumbs.html %}
-<div id="content-main" class="blog-post-page">
+<div id="content-main" class="blog-post-page" itemscope itemtype="http://schema.org/Blog">
   <div class="container">
     <div class="col-md-8">
-        <center><img src="{{ site.url}}{{ page.image }}" alt="{{ page.title }}"></center>
-		<article>{{ content }}</article>
+		<p intemprop="datePublished">Posted: {{ page.date | date: '%B %d, %Y' }}</p>
+        <center><img src="{{ site.url}}{{ page.image }}" alt="{{ page.title }}" itemprop="image"></center>
+		<article itemprop="text">{{ content }}</article>
 		<div id="disqus_thread"></div>
     </div>
     <div class="col-md-4">

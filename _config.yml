@@ -53,8 +53,8 @@ defaults:
        share: facebook linkedin twitter
 
 # Other Settings
-#gems:
-#  - octopress-minify-html
+gems:
+  - octopress-minify-html
 
 # Minify HTML
 env: production

@@ -3,12 +3,12 @@ layout: post
 title: 3 Common Misconceptions in SEO
 date: 2016-01-04 
 type: post
-published: false
-status: draft
+published: true
+status: publish
 categories:
 - Blog
 tags: []
-image:
+image: /images/blog/blog-3-common-misconceptions-in-seo.jpg
 description: SEO always has common misconceptions because it changes so much, in this article I aim to fix 3 common SEO misconceptions.
 ---
 
@@ -21,7 +21,7 @@ description: SEO always has common misconceptions because it changes so much, in
 <p>As of October 15, 2009... that's right <b>2009</b> a Google employee confirmed they removed PageRank from Google Webmaster Tools. The reason being, too many people relying on that single metric for ranking.</p>
 
 <h4>Domain Authority (DA)</h4>
-<p>Like PageRank I see and get asked questions about raising domain authority. I always rebuttle with the question "Why?". There is a common misconception that DA correlates with how well your website ranks in the search engine result pages (SERPS). This is quite simply untrue. DA was developed by the good people of <a href="https://moz.com" target="_blank">Moz</a> many a moon ago. They are not associated with Google, do not have Google's algorithms, and do not influence Google's ranking factors.</p>
+<p>Like PageRank I see and get asked questions about raising domain authority. I always rebuttle with the question "Why?". There is a common misconception that DA correlates with how well your website ranks in the search engine result pages (SERPS). This is quite simply untrue. DA was developed by the good people of <a href="https://moz.com" target="_blank">Moz</a> many moons ago. They are not associated with Google, do not have Google's algorithms, and do not influence Google's ranking factors.</p>
 <p><a href="https://moz.com/learn/seo/domain-authority" target="_blank">Here is more info on Domain Authority</a>. Moz defines Domain Authority as this:<br>
 "Domain Authority is Moz's calculated metric for how well a given domain is likely to rank in Google's search results. It is based off data from the Mozscape web index and includes link counts, MozRank and MozTrust scores, and dozens of other factors. It uses a machine learning model to predictively find an algorithm that best correlates with rankings across thousands of search results that we predict against."</p>
 

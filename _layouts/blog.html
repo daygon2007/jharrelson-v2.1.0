@@ -11,21 +11,21 @@ layout: default
   <div class="container">
     <div class="col-md-8 scroll">
       {% for post in site.categories.[page.category] %}
-      <div class="blog-post">
+      <div class="blog-post" itemscope itemtype="http://schema.org/Blog">
 			  {% if post.image == '' or post.image == nil %}
 			  {% else %}
-			  <center><img src="{{ site.url }}{{ post.image }}" alt="{{ post.title }}" width="50%" ></center>
+			  <center><img src="{{ site.url }}{{ post.image }}" alt="{{ post.title }}" width="50%" itemprop="image" ></center>
 			  {% endif %}
-			<h3><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
-			  {{ post.content | strip_html | truncatewords: 50 }}
+			<h3 itemprop="about"><a href="{{ site.url }}{{ post.url }}" itemprop="url">{{ post.title }}</a></h3>
+			  {{ post.description }}
 			  <br />
 			  <br />
-			<a href="{{ site.url }}{{ post.url }}" class="read-more">Read More <i class="fa fa-arrow-circle-right"></i></a>
+			<a href="{{ site.url }}{{ post.url }}" class="read-more" itemprop="url">Read More <i class="fa fa-arrow-circle-right"></i></a>
 		</div>
 		  {% endfor %}
     </div>
-    <div class="col-md-4">
+    <aside class="col-md-4">
 		{{% include sidebar.html %}}
-    </div>
+    </aside>
   </div>
 </div>

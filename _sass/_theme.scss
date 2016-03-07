@@ -148,6 +148,15 @@ p, ul, li, a{
 			}
 	}
 }
+.button{
+    border-radius: 5px;
+    padding: 5px 8px;
+    background:$teal;
+    color: $white;
+    &:hover{
+        background:$lblue;
+    }
+}
 
 /* Navigation */
 .navbar{
@@ -467,4 +476,17 @@ footer{
 	span{
 		color:$white;
 	}
+}
+/* sidebar.html */
+#newsletter-signup{
+    border-top: medium $lblue solid;
+    border-bottom: medium $lblue solid;
+    border-left: medium $teal solid;
+    border-right: medium $teal solid;
+    padding: 15px;
+    background: $white;
+    color:$black;
+    h3{
+        Color:$teal;
+    }
 }
