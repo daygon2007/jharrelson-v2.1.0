@@ -13,7 +13,11 @@ layout: default
           {% for post in site.categories.[page.category] %}
             <div class="portfolio-item">
 
-        <div class="portfolio-img"><img src="{{ site.url }}{{ post.image }}" alt="{{ post.title }}" ></div>
+        <div class="portfolio-img">
+            <a href="{{ post.item-url }}" target="blank">
+                <img src="{{ site.url }}{{ post.image }}" alt="{{ post.title }}" >
+            </a>
+        </div>
 
         <div class="portfolio-content">
             <h3>{{ post.title }}</h3>

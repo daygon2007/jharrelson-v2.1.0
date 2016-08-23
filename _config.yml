@@ -6,15 +6,13 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.jonathon-harrelson.com" # the base hostname & protocol for your site
 twitter_username: MrJHarrelson
 github_username:  Daygon2007
-exclude: [gulpfile.js, node_modules, package.json, README.md]
+exclude: [gulpfile.js, node_modules, package.json, README.md, _site, .sass-cache, .git]
 
 # Build settings
 markdown: kramdown
 
 #Setting Permalinks
 permalink: /:categories/:title/
-sass: 
-  style: compressed
 
 # Navigation
 navigation:
@@ -51,10 +49,3 @@ defaults:
        type: "posts"
      values:
        share: facebook linkedin twitter
-
-# Other Settings
-gems:
-  - octopress-minify-html
-
-# Minify HTML
-env: production
